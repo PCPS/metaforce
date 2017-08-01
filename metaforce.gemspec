@@ -27,7 +27,7 @@ EOL
   s.add_dependency 'hashie', '~> 1.2.0'
   s.add_dependency 'thor', '~> 0.16.0'
   s.add_dependency 'listen', '~> 3.0.5'
-  s.add_dependency 'rb-fsevent', '~> 0.9.1'
+  s.add_dependency 'rb-fsevent', '~> 0.10.2'
 
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec', '~> 2.14'
