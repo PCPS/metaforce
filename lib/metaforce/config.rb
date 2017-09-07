@@ -51,9 +51,11 @@ module Metaforce
     # calling .perform on a job will block until completion and all callbacks
     # have run. (default: true).
     attr_accessor :threading
+    attr_accessor :logger
 
     def initialize
       @threading = false
+      @logger = ::Logger.new STDOUT
     end
 
     def api_version
@@ -91,10 +93,6 @@ module Metaforce
 
     def wsdl
       File.expand_path("../../../wsdl/#{api_version}", __FILE__)
-    end
-
-    def logger
-      @logger ||= ::Logger.new STDOUT
     end
   end
 end
